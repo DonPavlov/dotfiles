@@ -1,0 +1,36 @@
+Host *
+     ServerAliveInterval 60
+     ServerAliveCountMax 30
+
+## override as per host ##
+
+Host pizero
+     HostName 192.168.178.35
+     User pi
+     IdentityFile ~/.ssh/pizero
+
+Host piserver
+     HostName 192.168.178.23
+     User pi
+     IdentityFile ~/.ssh/piserver
+
+Host kindle
+     HostName 192.168.178.26
+     User root
+     IdentityFile ~/.ssh/kindle
+
+Host tplink
+    HostName 192.168.178.2
+    user root
+    IdentityFile ~/.ssh/tplink
+
+Host github.com-DonPavlov
+    HostName github.com
+	PreferredAuthentications publickey
+    User git
+    IdentityFile ~/.ssh/github_ecdsa
+    
+Host gitlab.com
+   HostName gitlab.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/github_eos
