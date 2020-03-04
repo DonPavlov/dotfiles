@@ -8,14 +8,14 @@
 
 My private dotfiles. Not to be openly shared.
 
-##table of contents
+## table of contents
  - [introduction](#dotfiles)
  - [managing](#managing)
  - [installing](#installing)
  - [how it works](#how-it-works)
  - [tl;dr](#tldr)
 
-#dotfiles
+# dotfiles
 in the unix world programs are commonly configured in two different ways, via shell arguments or text based configuration files. programs with many options like window managers or text editors are configured on a per-user basis with files in your home directory `~`. in unix like operating systems any file or directory name that starts with a period or full stop character is considered hidden, and in a default view will not be displayed. thus the name dotfiles.
 
 it's been said of every console user:
@@ -23,10 +23,10 @@ it's been said of every console user:
 
 since they dictate how your system will look and function. to many users (see [ricers](http://unixporn.net) and [beaners](http://nixers.net)) these files are very important, and need to be backed up and shared. The easiest way is the following.
 
-#managing
+# managing
 i manage mine with [gnu stow](http://www.gnu.org/software/stow/), a free, portable, lightweight symlink farm manager. this allows me to keep a versioned directory of all my config files that are virtually linked into place via a single command. this makes sharing these files among many users (root) and computers super simple. and does not clutter your home directory with version control files.
 
-#installing
+# installing
 stow is available for all linux and most other unix like distributions via your package manager.
 
 - `sudo pacman -S stow`
@@ -35,7 +35,7 @@ stow is available for all linux and most other unix like distributions via your 
 
 or clone it [from source](https://savannah.gnu.org/git/?group=stow) and [build it](http://git.savannah.gnu.org/cgit/stow.git/tree/INSTALL) yourself.
 
-#how it works
+# how it works
 by default the stow command will create symlinks for files in the parent directory of where you execute the command. so my dotfiles setup assumes this repo is located in the root of your home directory `~/dotfiles`. and all stow commands should be executed in that directory. otherwise you'll need to use the `-d` flag with the repo directory location.
 
 to install most of my configs you execute the stow command with the folder name as the only argument.
@@ -54,7 +54,7 @@ to install the **connman config** you need to execute the command:
 
 this will symlink the file to `/etc/connman`.
 
-#tl;dr
+# tl;dr
 navigate to your home directory
 
 `cd ~`
