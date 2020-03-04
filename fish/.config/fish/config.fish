@@ -11,6 +11,7 @@ ssh-add ~/.ssh/git_ed25519
 ssh-add ~/.ssh/hetzneruser_priv
 ssh-add ~/.ssh/id_ed25519
 ssh-add ~/.ssh/pi_buntu
+ssh-add ~/.ssh/github_eos
 
 clear
 
