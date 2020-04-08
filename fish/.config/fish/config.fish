@@ -3,6 +3,9 @@ set -x PATH $PATH /sbin/
 set -x PATH $PATH /home/paul/Skripte
 set -x LANG "de_DE.UTF-8"
 
+#add rust tools
+set -x PATH $PATH /home/paul/.cargo/bin
+
 #correct behavior for ssh agent
 eval 'ssh-agent -s'
 
@@ -24,3 +27,5 @@ function sudo
         command sudo $argv
     end
 end
+
+thefuck --alias | source
