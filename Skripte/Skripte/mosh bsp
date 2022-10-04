@@ -1,1 +1,0 @@
-mosh paule@192.168.178.23 --ssh="ssh -p 23452 -i ~/.ssh/piserver"
