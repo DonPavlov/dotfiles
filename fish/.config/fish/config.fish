@@ -1,6 +1,6 @@
 set -x PATH $PATH /usr/bin
 set -x PATH $PATH /sbin/
-set -x PATH $PATH /home/paul/Skripte
+# set -x PATH $PATH /home/paul/Skripte
 set -x LANG "de_DE.UTF-8"
 
 #add rust tools
