@@ -91,3 +91,8 @@ sync it with git
 `git add .`
 `git commit -m " commit"`
 `git push`
+
+## Troubleshooting
+Keep files which are already present 
+`git stow git --adopt`
+will keep the already present file, replace it with a symlink and if you use git you may roll back and keep your new changes.
