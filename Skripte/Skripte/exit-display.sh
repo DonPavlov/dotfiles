@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # SEE YOU SPACE COWBOY by DANIEL REHN (danielrehn.com)
 # Displays a timeless message in your terminal with cosmic color effects

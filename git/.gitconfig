@@ -1,8 +1,3 @@
 [user]
-	name = Paul Hein
-	email = dehein@gmail.com
-[core]
-	editor = nano
-	autocrlf = input
-[push]
-	default = matching
+	name = DonPavlov
+	email = 1541649+DonPavlov@users.noreply.github.com
