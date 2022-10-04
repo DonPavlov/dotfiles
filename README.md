@@ -6,7 +6,6 @@
     ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
                                                              
 
-My private dotfiles. Not to be openly shared.
 
 ## table of contents
  - [introduction](#dotfiles)
@@ -40,11 +39,11 @@ by default the stow command will create symlinks for files in the parent directo
 
 to install most of my configs you execute the stow command with the folder name as the only argument.
 
-to install my **i3 config** use the command:
+to install my **git config** use the command:
 
-`stow i3`
+`stow git`
 
-this will symlink files to `~/.config/i3/` and various other places.
+this will symlink files to `~/.gitconfig` 
 
 But you can override the default behavior add symlink files to another location with the `-t` (target) argument flag.
 
@@ -82,10 +81,6 @@ install connman (for i3)
 uninstall connman (for i3)
 
 `stow -D connman`
-
-install i3
-
-`stow i3`
 
 etc, etc, etc...
 
