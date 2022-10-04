@@ -1,0 +1,13 @@
+## Mount Windows drive create /mount/datawin before
+  sudo udevil mount /dev/sdb3 /mount/datawin
+
+## config your fish shell
+  fish_config
+
+## work internet mit connman
+  # copy the connman config from dotfiles to /etc/connman/main.conf
+  sudo macchanger eth0 -m 00:19:99:99:65:6D -b -p
+  # start graphical networkmanager
+  connamn-gtk
+  # start tethering under wifi
+  
