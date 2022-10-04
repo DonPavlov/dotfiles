@@ -9,12 +9,10 @@ set -x PATH $PATH /home/paul/.cargo/bin
 #correct behavior for ssh agent
 eval 'ssh-agent -s'
 
-ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/git_ed25519
-ssh-add ~/.ssh/hetzneruser_priv
+ssh-add ~/.ssh/pi4key
+ssh-add ~/.ssh/ryzen2nas
 ssh-add ~/.ssh/id_ed25519
-ssh-add ~/.ssh/pi_buntu
-ssh-add ~/.ssh/github_eos
 
 clear
 
